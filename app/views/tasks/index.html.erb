@@ -1,6 +1,8 @@
 <h1>ÉSTAS SON TUS TAREAS</h1>
 <% @tasks.each do |task| %>
-    <li><%= link_to task.title, task_path(task) %></li>
+    <li>
+    <%= link_to task.title, task_path(task) %>
+    </li>
 <% end %>
 
 <h3><%= link_to "Añadir nueva tarea", new_path %></h3>
